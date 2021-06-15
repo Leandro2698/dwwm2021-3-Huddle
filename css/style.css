@@ -15,6 +15,9 @@ body {
 
     
 }
+a{
+    text-decoration: none;
+}
 
 .container{
     width: 100%;
@@ -229,46 +232,77 @@ body {
     padding-top: 19.15rem ;
     padding-bottom: 6.4rem;
     display: grid;
+    gap: 4.4rem 13.5rem;
+    
     
 
                 /* version grid rapide*/
     /* grid-template: auto auto / repeat(4, 1fr) ; */
 
 
-    grid-template-columns: 38rem 15.7rem 15.7rem 11.85rem;
+    grid-template-columns: 1fr 1fr 1fr;
     
-    gap: 4.11rem 13rem ;
+    /* gap: 4.11rem 13rem ; */
     
 }
-.bloc{
-    display: flex;
 
-}
+/* logo-footer */
 .img-logo-footer{
     grid-column: 1 / -1;
 }
-.footer-contact{
-    flex-direction: column;
+
+/* contact */
+.list-contact{
+    display: inline-block;
+
     grid-column: 1;
     grid-row-start: 2;
 }
-.footer-question{
-    flex-direction: column;
+.footer-img-contact{
+    padding-right: 2.5rem;
+}
+/* list pro ask carrer */
+.list-pro{
+    display: flex;
+    justify-content: space-between;
     grid-column: 2;
     grid-row-start: 2;
 }
-.footer-pro{
-    flex-direction: column;
+/* reseau */
+.list-reseau{
+    max-width: 15rem;
+    margin-left: 10rem;
+    display: flex;
+    justify-content: space-around;
     grid-column: 3;
     grid-row-start: 2;
 }
-.footer-reseau{
-    grid-column: 4;
-    grid-row-start: 2;
+
+.link-reseau{
+    border: 0.0918356716632843rem solid #DFE4F0;
+    border-radius: 50%;
+    padding-right: 11px;
+    padding-left: 11px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+
+    
 }
-.para-footer{
+/* copyright */
+.footer-para{
+    grid-column: 3;
+    grid-row-start: 3;
+    
+}
+
+.menu-link{
+    display: flex;
+    align-items: start;
+    padding-bottom: 2.5rem;
     color: #fff;
 }
-.footer-contact > .menu-link{
-    display: flex;
+
+.para-footer{
+    font-size: 1.2rem;
+    color: #fff;
 }
