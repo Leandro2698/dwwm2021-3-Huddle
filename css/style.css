@@ -29,26 +29,22 @@ a{
 @media screen and (max-width: 75em) { /* eq 1200px */
     .container {
         max-width: 116rem;
-        background-color: violet;
     }
 }
 @media screen and (max-width: 62em) { /* eq 992px */
     .container {
         max-width: 95.2rem;
-        background-color: orange;
     }
 }
 @media screen and (max-width: 48em) { /* eq 768px */
     .container {
         max-width: 72.8rem;
-        background-color: skyblue;
     }
 }
 
 @media screen and (max-width: 36em) { /* Indiquer les mesures en em avec une base de 16px - Ex : 576/16 = 36em*/
     .container {
         max-width: 53.6rem;
-        background-color: green;
     }
 }
 
@@ -79,8 +75,6 @@ a{
     .site-header > .container{
         justify-content: space-around;
     }
-    .site-header{
-    }
 }
 
 
@@ -108,6 +102,13 @@ a{
     border-radius: 2.4rem;
     box-shadow: 0rem .3rem 1.1rem #00000018;
     display: inline-block;
+    transition: 0.3s;
+}
+.btn-link-try:hover,
+.btn-link-try:focus{
+    background-color: #FF52C1 ;
+    color: #FFF;
+    border: 1rem solid #FFF;
 }
 @media screen and (max-width: 36em) { /* Indiquer les mesures en em avec une base de 16px - Ex : 576/16 = 36em*/
     .logo{
@@ -134,12 +135,7 @@ a{
     display: flex;
     align-items: center;
 }
-@media screen and (max-width: 62em) { /* eq 992px */ 
-    .hero > .container {
-        margin-top: 0rem;
-        margin-bottom: 0rem;
-    }
-}
+
 @media screen and (max-width: 48em){ 
     .hero > .container {
         max-width: 47rem;
@@ -147,11 +143,12 @@ a{
         
     }
 }
+
 .img-hero{
     width: 95%;
     max-width: 65.6rem;
-    min-width: 32.8rem;
 }
+
 
 .text-hero{
     margin-right:5.4rem ;
@@ -186,6 +183,13 @@ a{
     border-radius: 2.8rem;
     box-shadow: .2rem .3rem .6rem #FF52C12A;
     display: inline-block;
+    transition: 0.3s;
+}
+.btn-hero-free:hover,
+.btn-hero-free:focus{
+    background-color: #FFF;
+    color: #FF52C1;
+    border: 1rem solid #FF52C1;
 }
 @media screen and (max-width: 48em){ 
     .img-hero{
@@ -204,6 +208,25 @@ a{
         font-size: 1.6rem;
     }
     
+}
+@media screen and (max-width: 36em){
+    .img-hero{
+        width: 95%;
+        max-width: 65.6rem;
+    }    
+
+    .btn-hero-free{
+            
+            font-size: 1rem;
+            line-height: 1.3;
+            text-decoration: none;
+            color: #fff ;
+            background-color: #FF52C1;
+            border: 0;
+            border-radius: 2.8rem;
+            box-shadow: .2rem .3rem .6rem #FF52C12A;
+            display: inline-block;
+        }
 }
 
 .explanation > .container{
@@ -310,6 +333,8 @@ a{
         max-width: 70rem;
     }
 }
+
+
 .ready {
     margin-top: 16rem;
     margin-bottom: -10rem;
@@ -339,6 +364,22 @@ a{
     border-radius: 4rem;
     box-shadow: 0rem .6rem 1.3rem #00252E39;
     display: inline-block;
+    transition: 0.3s;
+}
+.btn-ready-free:hover,
+.btn-ready-free:focus{
+    background-color: #FFF;
+    color: #FF52C1;
+    border: 1rem solid #FF52C1;
+}
+@media screen and (max-width: 36em){
+    .title-ready {
+        text-align: center;
+        font-size: 1.8rem;
+    }
+    .btn-ready-free{
+        font-size: 1.2rem;
+    }
 }
 /* Footer */
 
@@ -349,8 +390,8 @@ a{
     padding-top: 19.15rem ;
     padding-bottom: 6.4rem;
     display: grid; 
-    grid-template-columns: 2fr 1fr 1fr;
-    column-gap: 12rem;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 5rem;
     row-gap: 4rem;
 }
 @media screen and (max-width: 62em) { /* eq 992px */
@@ -383,9 +424,8 @@ a{
     grid-column: 3 / -1;
 }
 .list-pro{
-    display: grid;
-    grid-template-columns: max-content max-content;
-    gap: 12rem;
+    columns: 10rem 2;
+    gap: 2rem;
 }
 .item-contact,.item-pro {
     padding-bottom: 3rem;
@@ -397,7 +437,7 @@ a{
 .list-reseau{
     
     grid-row: 2;
-    max-width: 12rem;
+    max-width: 50%;
     display: flex;
     justify-content: space-between;
 }
@@ -414,7 +454,7 @@ a{
     }
     .list-reseau{
         display: flex;
-        justify-content: space-evenly;
+        justify-content: center; 
         max-width: 100%;
         grid-row: 4;
     }
@@ -425,18 +465,20 @@ a{
         grid-row: 5;
     }
 }
-.link-reseau{
+.item-reseau{
     border: 0.0918356716632843rem solid #DFE4F0;
     border-radius: 50%;
-    padding-right: 10px;
-    padding-left: 10px;
-    padding-top: 8px;
-    padding-bottom: 8px;
-    display: inline-block;
+    width: 5rem;
+    height: 5rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
     
 }
+
 .menu-link{
     color: #fff;
+    
 }
  
 
